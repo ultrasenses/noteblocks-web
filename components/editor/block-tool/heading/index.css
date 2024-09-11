@@ -1,0 +1,25 @@
+.ce-heading {
+  @apply font-bold text-primary outline-none;
+}
+
+h1.ce-heading {
+  @apply mb-1 mt-8 text-2xl;
+}
+h2.ce-heading {
+  @apply mb-1 mt-5 text-xl;
+}
+h3.ce-heading {
+  @apply mb-1 mt-4 text-lg;
+}
+
+.ce-heading[contentEditable="true"][data-placeholder]::before {
+  @apply absolute hidden cursor-text font-bold text-primary/50 content-[attr(data-placeholder)];
+}
+
+.ce-heading[contentEditable="true"][data-placeholder]:empty::before {
+  @apply block;
+}
+
+.ce-heading[contentEditable="true"][data-placeholder]:empty:focus::before {
+  @apply hidden;
+}

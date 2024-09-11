@@ -1,0 +1,150 @@
+/* Editorjs custom */
+.ce-block__content,
+.ce-toolbar__content {
+  @apply max-w-[unset];
+}
+.ce-popover__overlay {
+  @apply bg-stone-900 opacity-0;
+}
+/* Editor blocktool item */
+.ce-popover-item {
+  @apply rounded-md bg-background p-1 text-primary transition hover:!bg-secondary;
+}
+.ce-popover-item--active,
+.ce-inline-tool--active {
+  @apply bg-muted-foreground/20 text-primary;
+}
+.ce-popover-item__icon {
+  @apply mr-2 rounded-md border bg-background text-primary shadow-none;
+}
+.ce-popover-item__title {
+  @apply text-sm font-medium;
+}
+.ce-popover-item.ce-popover-item--confirmation {
+  @apply bg-destructive hover:!bg-destructive/90;
+}
+
+/* Editor trigger button */
+.ce-toolbar__plus,
+.ce-toolbar__settings-btn {
+  @apply h-8 w-8 rounded-md border border-input bg-background text-primary shadow-sm hover:!bg-secondary dark:bg-stone-800;
+}
+
+/* Editor block popover */
+.ce-popover {
+  @apply rounded-md border border-input bg-background p-1 shadow-sm;
+}
+
+.ce-popover__nothing-found-message {
+  @apply py-2 text-center text-xs font-normal;
+}
+
+/* Editor block */
+.ce-paragraph,
+.ce-heading {
+  @apply selection:bg-muted-foreground/20;
+}
+.ce-block--selected .ce-block__content {
+  @apply bg-muted-foreground/30;
+}
+
+/* Editor block popover search */
+.cdx-search-field {
+  @apply focus-within:bg-background;
+}
+.cdx-search-field {
+  @apply rounded-md border border-accent bg-accent text-primary;
+}
+
+.cdx-search-field__input {
+  @apply font-normal placeholder:text-sm placeholder:font-normal placeholder:text-muted-foreground;
+}
+
+.cdx-search-field__icon {
+  @apply mr-2;
+}
+
+.cdx-search-field__icon svg {
+  @apply text-muted-foreground;
+}
+
+/* Editor inline toolbar*/
+.ce-inline-toolbar {
+  @apply border border-input bg-background text-primary shadow-sm dark:bg-stone-800;
+}
+.ce-inline-tool {
+  @apply w-7 py-1 hover:!bg-secondary dark:hover:!bg-muted-foreground/10;
+}
+.ce-inline-toolbar__dropdown {
+  @apply border-r hover:!bg-secondary dark:border-r-muted-foreground/10 dark:hover:!bg-muted-foreground/10;
+}
+
+/* Editor convertion tool*/
+.ce-conversion-toolbar__tools {
+  @apply p-1;
+}
+.ce-conversion-toolbar {
+  @apply rounded-md border border-input bg-background shadow-sm;
+}
+.ce-conversion-toolbar__label {
+  @apply capitalize text-muted-foreground;
+}
+.ce-conversion-tool:not(:last-of-type) {
+  @apply mb-[1px];
+}
+.ce-conversion-tool {
+  @apply rounded-md p-1 text-sm font-medium text-primary hover:bg-secondary;
+}
+.ce-conversion-tool__icon {
+  @apply mr-2 rounded-md border bg-background text-primary shadow-none;
+}
+
+.ce-conversion-tool.ce-conversion-tool--focused {
+  @apply !bg-muted-foreground/20 shadow-none;
+}
+.ce-conversion-toolbar__label {
+  @apply m-0 pt-2;
+}
+
+/* Marker tool*/
+mark.cdx-marker {
+  @apply !bg-yellow-200/90;
+}
+
+/* this is custom icon from lucide icon */
+.ce-conversion-tool__icon svg.lc,
+.ce-inline-tool svg.lc,
+.ce-inline-toolbar__dropdown-content svg.lc,
+.ce-popover-item__icon svg.lc {
+  @apply h-4 w-4 text-primary;
+}
+
+/* Editor blocktool */
+.ce-stub {
+  @apply rounded-md border-none bg-secondary p-3 text-muted-foreground shadow-none;
+}
+
+/* Editor checklist blocktool */
+.cdx-checklist__item-text {
+  @apply selection:bg-muted-foreground/20;
+}
+.cdx-checklist__item-checkbox-check {
+  @apply dark:!border-secondary dark:!bg-primary-foreground;
+}
+.cdx-checklist__item--checked .cdx-checklist__item-checkbox-check {
+  @apply !border-secondary-foreground !bg-secondary-foreground dark:!border-secondary dark:!bg-secondary;
+}
+.cdx-checklist__item-checkbox-check:before {
+  @apply !bg-secondary-foreground/30;
+}
+
+/* Editor settings */
+.cdx-horizontal__wrapper {
+  @apply flex gap-x-2 pb-1 pt-1 md:px-1;
+}
+.cdx-horizontal-button {
+  @apply flex h-9 w-9 items-center justify-center rounded-md border border-input transition hover:bg-secondary md:h-8 md:w-8;
+}
+.cdx-horizontal-button--active {
+  @apply bg-muted-foreground/20;
+}
