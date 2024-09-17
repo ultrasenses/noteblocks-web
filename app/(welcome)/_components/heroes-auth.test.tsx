@@ -2,14 +2,14 @@ import { render, screen, within } from "@testing-library/react"
 import HeroesAuth from "./heroes-auth"
 
 describe("heroes auth", () => {
-  it("show get station free button when not log in", () => {
+  it("show get noteblocks free button when not log in", () => {
     render(<HeroesAuth email={null} />)
 
     expect(
       screen.queryByRole("link", { name: /view dashboard/i }),
     ).not.toBeInTheDocument()
 
-    expect(screen.getByRole("link", { name: /get station free/i })).toBeInTheDocument()
+    expect(screen.getByRole("link", { name: /get noteblocks free/i })).toBeInTheDocument()
   })
 
   it("show view dashboard button when logged in", () => {
@@ -18,7 +18,7 @@ describe("heroes auth", () => {
     expect(screen.getByRole("link", { name: /view dashboard/i })).toBeInTheDocument()
 
     expect(
-      screen.queryByRole("link", { name: /get station free/i }),
+      screen.queryByRole("link", { name: /get noteblocks free/i }),
     ).not.toBeInTheDocument()
   })
 })

@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 
 export const constructMetadata = ({
-  title = "Station note",
-  description = "Station note app is a realtime, free & open source note taking app",
+  title = "Noteblocks",
+  description = "Noteblocks app is a realtime, note taking app",
   image = "https://station-proto.netlify.app/_static/thumbnail.png", // todo: not yet
   icons = [
     {

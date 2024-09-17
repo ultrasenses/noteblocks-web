@@ -54,7 +54,7 @@ export default async function WelcomePage() {
           </h1>
 
           <p className="mb-3 font-medium md:text-2xl">
-            Station is the connected workspace where <br /> better, faster work happens.
+            Noteblocks is the connected workspace where <br /> better, faster work happens.
           </p>
 
           <HeroesAuth email={data.user?.email ?? null} />
@@ -103,7 +103,7 @@ export default async function WelcomePage() {
           </div>
 
           <p className="text-right text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Station Labs - All rights reserved.
+            © {new Date().getFullYear()} Noteblocks Labs - All rights reserved.
           </p>
         </div>
       </footer>

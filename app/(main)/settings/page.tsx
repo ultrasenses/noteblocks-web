@@ -57,7 +57,7 @@ export default function SettingsPage() {
               <span className="mb-1 ">Appearance</span>
 
               <span className="block text-left text-xs font-normal text-muted-foreground">
-                Customize how Station looks on your devices
+                Customize how Noteblocks looks on your devices
               </span>
             </div>
 

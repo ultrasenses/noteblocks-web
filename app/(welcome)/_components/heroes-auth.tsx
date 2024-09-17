@@ -10,7 +10,7 @@ export default function HeroesAuth({ email }: Props) {
   if (!email) {
     return (
       <Button size="lg" asChild>
-        <Link href="/signup">Get Station Free</Link>
+        <Link href="/signup">Get Noteblocks Free</Link>
       </Button>
     )
   }

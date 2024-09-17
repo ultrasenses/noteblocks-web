@@ -1,6 +1,5 @@
 import UserPopover from "@/app/(main)/_components/popover/user-popover"
 import { Button } from "@/components/ui/button"
-import { GithubIcon } from "lucide-react"
 import Link from "next/link"
 
 type Props = {
@@ -21,15 +20,15 @@ export default function NavAuth({ fullname, username, email }: Props) {
           <Link href="/signup">Sign up</Link>
         </Button>
 
-        <Button asChild variant="ghost" size="sm">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/fsaythanry/station-a-notion-clone"
-          >
-            <GithubIcon size={16} />
-          </a>
-        </Button>
+        {/*<Button asChild variant="ghost" size="sm">*/}
+        {/*  <a*/}
+        {/*    target="_blank"*/}
+        {/*    rel="noreferrer"*/}
+        {/*    href="https://github.com/fsaythanry/station-a-notion-clone"*/}
+        {/*  >*/}
+        {/*    <GithubIcon size={16} />*/}
+        {/*  </a>*/}
+        {/*</Button>*/}
       </div>
     )
   }
@@ -42,15 +41,15 @@ export default function NavAuth({ fullname, username, email }: Props) {
         </Button>
       </UserPopover>
 
-      <Button asChild variant="ghost" size="sm">
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/fsaythanry/station-a-notion-clone"
-        >
-          <GithubIcon size={16} />
-        </a>
-      </Button>
+      {/*<Button asChild variant="ghost" size="sm">*/}
+      {/*  <a*/}
+      {/*    target="_blank"*/}
+      {/*    rel="noreferrer"*/}
+      {/*    href="https://github.com/fsaythanry/station-a-notion-clone"*/}
+      {/*  >*/}
+      {/*    <GithubIcon size={16} />*/}
+      {/*  </a>*/}
+      {/*</Button>*/}
     </div>
   )
 }

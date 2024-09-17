@@ -13,7 +13,7 @@ export default function DocPage() {
         className="mb-8 w-[200px] object-contain filter dark:invert md:w-[400px]"
       />
       <h2 className="mb-1 text-2xl ">
-        Welcome to <strong className="underline">Station</strong>
+        Welcome to <strong className="underline">Noteblocks</strong>
       </h2>
       <p className="mb-8 ">Create new page to start write your idea.</p>
 

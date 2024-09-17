@@ -11,7 +11,7 @@ const Logo = () => {
         width={40}
         className="object-contain"
       />
-      <span className="font-semibold">Station</span>
+      <span className="font-semibold">Noteblocks</span>
     </Link>
   )
 }

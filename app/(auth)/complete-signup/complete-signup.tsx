@@ -25,7 +25,7 @@ export default function CompleteSignUpPage() {
       </h1>
       <p className="mb-8 w-full  text-left">
         Please, fill this form down below to continue using{" "}
-        <span className="font-bold underline">Station.</span>
+        <span className="font-bold underline">Noteblocks.</span>
       </p>
 
       <Form {...form}>

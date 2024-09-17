@@ -53,7 +53,7 @@ export default function UserPopover({ children, fullname, username }: Props) {
 
               {(fullname || username) && (
                 <div className="flex flex-col">
-                  <p className="text-sm capitalize ">{fullname}&apos;s Station</p>
+                  <p className="text-sm capitalize ">{fullname}&apos;s Noteblocks</p>
                   <p className="text-xs text-muted-foreground">@{username}</p>
                 </div>
               )}
